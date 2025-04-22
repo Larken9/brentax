@@ -1,0 +1,145 @@
+/* Navigation */
+.navbar {
+  background-color: var(--white);
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f1f5f7;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topbar-container {
+  display: flex;
+  justify-content: flex-end; /* align content (nav) to the right */
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 28px;
+}
+
+.topbar {
+  background-color: #f1f5f7;
+  border-bottom: 1px solid #dbdee0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--brand-purple);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cta-btn {
+  background-color: var(--brand-purple);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 25px;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+}
+
+.lang-switch span {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.2rem 0.4rem;
+}
+
+.lang-switch .active {
+  color: var(--brand-purple);
+}
+
+/* Hero Section */
+.hero {
+  background-color: var(--accent-purple);
+  padding: 6rem 2rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.hero a.cta-button {
+  background-color: var(--white);
+  color: var(--brand-purple);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero a.cta-button:hover {
+  background-color: #eee;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}

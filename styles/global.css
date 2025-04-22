@@ -1,0 +1,44 @@
+/* Reset Styles */
+
+:root {
+  --brand-purple: #6a1b9a; /* Primary purple */
+  --accent-purple: #9c27b0; /* Lighter accent */
+  --bg-light: #f9f9f9;
+  --text-dark: #1c1c1c;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #1c1c1c;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utility */
+section {
+  margin-bottom: 2rem;
+}

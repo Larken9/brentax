@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brentax</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav class="topbar">
+      <div class="topbar-container">
+        <ul class="nav-links topbar-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src="assets/logo.png" alt="Brentax Logo" class="logo" />
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-right">
+        <a href="#locations" class="icon-link">
+          <span class="icon">🏢</span> Visit Us
+        </a>
+        <a href="#signin" class="cta-btn">Sign In</a>
+        <div class="lang-switch">
+          <span class="active">EN</span>/<span>FR</span>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1>The tax deadline is April 30.</h1>
+            <p>
+                Centrally located in Rothesay, BrenTax is a full service professional tax centre proudly serving our clients all across Canada with all their income tax needs.
+            </p>
+            <div class="hero-buttons">
+              <a href="#services" class="btn primary-btn">File with an expert</a>
+              <a href="#software" class="btn secondary-btn">Services</a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img src="assets/hero-people.webp" alt="Brentax experts" />
+          </div>
+        </div>
+      </section>
+      
+<!-- Your Tax Professional Section -->
+      <section class="file-options">
+        <div class="container file-grid">
+          <div class="file-text">
+            <h2>File your taxes the way you want.</h2>
+            <p>At Brentax, we offer multiple ways to file, making it easier than ever to complete your taxes.</p>
+          </div>
+      
+          <div class="file-cards">
+            <div class="file-card">
+              <img src="assets/prep-icon.png" alt="Office Icon" />
+              <h3>Preperation Services</h3>
+            </div>
+            <div class="file-card">
+              <img src="assets/disability-icon.png" alt="Dropoff Icon" />
+              <h3>Disability Tax Refunds</h3>
+            </div>
+            <div class="file-card">
+              <img src="assets/remote.png" alt="Remote Icon" />
+              <h3>File remotely from anywhere.</h3>
+            </div>
+            <div class="file-card">
+              <img src="assets/brenbucks.png" alt="DIY Icon" />
+              <h3>Brenbucks</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <div class="container about-content">
+          <h2>We Care... We Listen...  </h2>
+          <p>
+            BrenTax is an excellent blend of personal service and tax expertise.  Our tax professionals keep fully abreast of changes in tax legislation to ensure we help you maximize your savings.  We have a diverse customer base and proudly meet the needs of each of our clients. We prepare taxes for you as well as offer advice on tax savings. Our tax professionals prepare all types of tax returns efficiently and will minimize unnecessary tax burdens and optimize tax advantages. Many of our clients have saved significant amounts of money as a result of our thorough reviews.
+          </p>
+          <p>
+            BrenTax is a highly respected tax preparer and a leader in Medical Tax Returns.  We can help you or a loved one with a long term medical condition ease the tax burden. 
+          </p>
+          <img src="assets/about-image.png" alt="Founders of Brentax" class="about-image" />
+        </div>
+      </section>
+      
+      <section class="tax-estimator">
+        <div class="container tax-estimator-grid">
+          <!-- Form Column -->
+          <div class="tax-estimator-form">
+            <h3>Add details here</h3>
+            <form onsubmit="event.preventDefault(); calculateRefund();">
+              <select id="province" required>
+                <option disabled selected>Select Province</option>
+                <option>Ontario</option>
+                <option>Nova Scotia</option>
+                <option>Quebec</option>
+              </select>
+              <input type="number" id="income" placeholder="Employment Income" required />
+              <input type="number" id="taxesPaid" placeholder="Taxes Paid" required />
+              <input type="number" id="rrsp" placeholder="RRSP Contributions" />
+              <button type="submit">Calculate</button>
+            </form>
+          </div>
+          <!-- Result Column -->
+            <div class="tax-estimator-result" id="tax-result">
+                    <img src="assets/about-image.png" alt="Tax Illustration" id="resultImage" class="large" />
+                <div id="resultText" class="result-text"></div>
+            </div>
+        </div>
+      </section>
+      <!-- Contact Section-->
+      <section class="contact-section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-intro">
+            <h2>Let’s talk.</h2>
+            <p>Whether you have a question about taxes, business services, or just want to say hello — we’d love to hear from you.</p>
+          </div>
+      
+          <form class="contact-form" name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+            
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Brentax. All rights reserved.</p>
+    </footer>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
