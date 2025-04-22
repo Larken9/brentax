@@ -29,7 +29,7 @@
         /></a>
         <ul class="nav-links">
           <li><a href="services.html">Services</a></li>
-          <li><a href="resources.html">Resources</a></li>
+          <li><a href="resources.html">Disability Tax Refunds</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </div>
@@ -46,13 +46,18 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="services-hero">
-      <div class="container">
-        <h1>Expert Services, Personalized for You</h1>
+    <section class="hero-split">
+      <div class="hero-split-content">
+        <h1>Your trusted<br /><span>tax & business experts.</span></h1>
         <p>
-          From tax filing to business consulting, we offer solutions tailored to
-          your goals — with care, clarity, and confidence.
+          The professionals at BrenTax are here to help with all your tax
+          preparation services. We are an All Year-Round Income Tax Service
+          provider and are pleased to provide our clients with the following
+          services:
         </p>
+      </div>
+      <div class="hero-split-image">
+        <img src="assets/services-hero.png" alt="Brentax Office Front" />
       </div>
     </section>
 
@@ -60,8 +65,8 @@
     <section class="services-list">
       <div class="container service-grid">
         <div class="service-card">
-          <img src="assets/icon-taxes.svg" alt="Tax Prep Icon" />
-          <h3>Tax Preparation</h3>
+          <img src="assets/prep-icon.png" alt="Tax Prep Icon" />
+          <h3>Personal Income Tax</h3>
           <p>
             We make tax season stress-free with fast, accurate, and personalized
             filing for individuals and families.
@@ -69,8 +74,8 @@
         </div>
 
         <div class="service-card">
-          <img src="assets/icon-disability.svg" alt="Disability Refund Icon" />
-          <h3>Disability Tax Refunds</h3>
+          <img src="assets/prep-icon.png" alt="Disability Refund Icon" />
+          <h3>T4’s/Payroll</h3>
           <p>
             We help you navigate and claim Disability Tax Credits to ensure you
             get the full benefits you're entitled to.
@@ -78,8 +83,8 @@
         </div>
 
         <div class="service-card">
-          <img src="assets/icon-remote.svg" alt="Remote Filing Icon" />
-          <h3>File Remotely</h3>
+          <img src="assets/prep-icon.png" alt="Remote Filing Icon" />
+          <h3>Small Business Tax</h3>
           <p>
             No need to leave home — securely submit your documents online and
             have our experts file for you.
@@ -87,8 +92,8 @@
         </div>
 
         <div class="service-card">
-          <img src="assets/icon-dropoff.svg" alt="Dropoff Filing Icon" />
-          <h3>Drop-Off Filing</h3>
+          <img src="assets/prep-icon.png" alt="Dropoff Filing Icon" />
+          <h3>Disability Tax Refunds</h3>
           <p>
             Prefer in-person but quick? Drop off your documents at any Brentax
             location and we’ll handle the rest.
@@ -96,13 +101,54 @@
         </div>
 
         <div class="service-card">
-          <img src="assets/icon-brenbucks.svg" alt="Brenbucks Icon" />
-          <h3>Brenbucks Rewards</h3>
+          <img src="assets/prep-icon.png" alt="Dropoff Filing Icon" />
+          <h3>Bookkeeping</h3>
+          <p>
+            Prefer in-person but quick? Drop off your documents at any Brentax
+            location and we’ll handle the rest.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <img src="assets/prep-icon.png" alt="Brenbucks Icon" />
+          <h3>GST/HST Filing</h3>
           <p>
             Earn credit toward future filings and perks when you refer friends
             and family to Brentax services.
           </p>
         </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container contact-grid">
+        <div class="contact-intro">
+          <h2>Let’s connect</h2>
+          <p>
+            Have questions about our services or want to get started? Fill out
+            the form and we’ll be in touch shortly.
+          </p>
+        </div>
+
+        <form
+          class="contact-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
       </div>
     </section>
 
